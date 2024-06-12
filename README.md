@@ -23,13 +23,17 @@ Answer the following questions based on your understanding of the installation a
 2. First-time Setup:
    - After installing VS Code, what initial configurations and settings should be adjusted for an optimal coding environment? Mention any important settings or extensions.
    To set up optimal coding environment in vs code,you'll want to make a few initial configurations and settings adjustments.Here are some important settings and extensions to consider:
-   1.Install essential extensions:
-   .Code runner:This extension allows you to run and debug code in various languages,including python,javascript and c++.
-   .Debugger for chrome;If you're working with javascript or typescript,this extension provides seamless debugging support.
-   .GitLens:This extension provides Git integration,code navigation,and code review features.
-   .Live server:This extension allows you to create a live server for web development,enabling live reload and auto-fresh.
-   2.Configure the editor settings:
-   .Settings>User settings(JSON):Open the settings in vs code,which is located at|/.vscode/settings.json(on linux and macos)or%USERPROFILE%\vscode\settings.json(on windows)
+   Theme and syntax highlighting:Choose a theme that provides a comfortable visual experience and helps you focus on your code.
+   Font and font size:Select a font:Select a font that is easy to read and comfortable for long coding sessions.
+   Tab settings:Configure tab settings to automatically insert spaces.
+   Debugging:Configure debugging settings for your preferred programming language.
+   Version control:Integrate version control systems like git to manage code changes and collaborate with others.
+   Extensions:Install extensions to enhance your coding experience.
+Some essential extensions include:
+Debugger for chrome(for debugging web applications)
+Python extension(for python development)
+Code runner(for running code snippets)
+Live server(for live reloading and serving web applications.)
 
 3. User Interface Overview:
    - Explain the main components of the VS Code user interface. Identify and describe the purpose of the Activity Bar, Side Bar, Editor Group, and Status Bar.
@@ -44,7 +48,7 @@ Answer the following questions based on your understanding of the installation a
 
 4. Command Palette:
    - What is the Command Palette in VS Code, and how can it be accessed? Provide examples of common tasks that can be performed using the Command Palette.
-   The command palette in vs code is a feature that allows users to quickly access various commands and functions within the integraated development(IDE).It can be accessed by pressing the shortcut key Ctrl+shift+P(windows/linux)or Cmd+shift+P(mac)on your keyboard.This will open search field where you can type the command you want to execute or browse through the available commands by scrolling through the list.
+   The command palette in vs code is a feature that allows users to quickly access various commands and functions within the integraated development(IDE).It can be accessed by pressing the shortcut key Ctrl+shift+P(windows/linux) on your keyboard.This will open search field where you can type the command you want to execute or browse through the available commands by scrolling through the list.
    Some common tasks that can be perfomed using the command palette in vs code include:
    .Formatting code:By typing "format document" and pressing enter,you can quickly format your code to improve readability.
    .Searching for symbols:By typing "go to symbol" and pressing enter,you can quickly navigate to a specific symbol(such as a variable,function,or class)in your code.
@@ -117,7 +121,7 @@ Answer the following questions based on your understanding of the installation a
    Debugging in vs code involves setting up and starting debugging a problem,as well as utilizing available debugging tools.
    Steps to set up and start debugging a program in vs code:
    .Open vs code workspace and navigate to the folder containing the source code you want to debug.
-   Open the command palette inn vs code by pressing Ctrl+shift+P(windows/linux) or Cmd+shift+P (mac)
+   Open the command palette inn vs code by pressing Ctrl+shift+P
    .Type "debug:open configuration"(JSON)" and press enter.This will open the launch.json file,which is used to configure the debugging environment.
    .In the launch.json file,you'll see a configuration for the currently active language,you'll need to add a configuration for that language.For example,if you're using javascript,you can add the following configuration:{"name":".vscode/launch.json","type":"node","request":"launch","program":"$[fileDir}/out-tsc"],"sourceFileMap":{"${fileDir}/src":"${fileDir}/src"}},"Prelaunchtask":{"type":"typescript","name":"tsc:build"}
    .Save the launch.json file and close it.
